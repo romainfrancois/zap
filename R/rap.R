@@ -224,27 +224,27 @@ print.rap_lamdda <- function(x, ...) {
 
 #' @rdname rap
 #' @export
-wap_dbl <- function(...) wap(..., .ptype = double())
+wap_dbl <- function(.tbl, ...) wap(.tbl, ..., .ptype = double())
 
 #' @rdname rap
 #' @export
-wap_lgl <- function(...) wap(..., .ptype = logical())
+wap_lgl <- function(.tbl, ...) wap(.tbl, ..., .ptype = logical())
 
 #' @rdname rap
 #' @export
-wap_int <- function(...) wap(..., .ptype = integer())
+wap_int <- function(.tbl, ...) wap(.tbl, ..., .ptype = integer())
 
 #' @rdname rap
 #' @export
-wap_chr <- function(...) wap(..., .ptype = character())
+wap_chr <- function(.tbl, ...) wap(.tbl, ..., .ptype = character())
 
 #' @rdname rap
 #' @export
-wap_raw <- function(...) wap(..., .ptype = raw())
+wap_raw <- function(.tbl, ...) wap(.tbl, ..., .ptype = raw())
 
 #' @rdname rap
 #' @export
-wap_dfr <- function(...) wap(..., .ptype = data.frame())
+wap_dfr <- function(.tbl, ...) wap(.tbl, ..., .ptype = data.frame())
 
 #' @rdname rap
 #' @export
@@ -261,24 +261,24 @@ rap <- function(.tbl, ..., .ptype = list()) {
 
 #' @rdname rap
 #' @export
-rap_dbl <- function(...) rap(..., .ptype = double())
+rap_dbl <- function(.tbl, ...) rap(.tbl, ..., .ptype = double())
 
 #' @rdname rap
 #' @export
-rap_lgl <- function(...) rap(..., .ptype = logical())
+rap_lgl <- function(.tbl, ...) rap(.tbl, ..., .ptype = logical())
 
 #' @rdname rap
 #' @export
-rap_int <- function(...) rap(..., .ptype = integer())
+rap_int <- function(.tbl, ...) rap(.tbl, ..., .ptype = integer())
 
 #' @rdname rap
 #' @export
-rap_chr <- function(...) rap(..., .ptype = character())
+rap_chr <- function(.tbl, ...) rap(.tbl, ..., .ptype = character())
 
 #' @rdname rap
 #' @export
-rap_raw <- function(...) rap(..., .ptype = raw())
+rap_raw <- function(.tbl, ...) rap(.tbl, ..., .ptype = raw())
 
 #' @rdname rap
 #' @export
-rap_dfr <- function(...) rap(..., .ptype = data.frame())
+rap_dfr <- function(.tbl, ...) rap(.tbl, ..., .ptype = data.frame())

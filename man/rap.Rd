@@ -25,31 +25,31 @@ nap(.tbl, ...)
 
 lap(.tbl, ..., .ptype = list())
 
-wap_dbl(...)
+wap_dbl(.tbl, ...)
 
-wap_lgl(...)
+wap_lgl(.tbl, ...)
 
-wap_int(...)
+wap_int(.tbl, ...)
 
-wap_chr(...)
+wap_chr(.tbl, ...)
 
-wap_raw(...)
+wap_raw(.tbl, ...)
 
-wap_dfr(...)
+wap_dfr(.tbl, ...)
 
 rap(.tbl, ..., .ptype = list())
 
-rap_dbl(...)
+rap_dbl(.tbl, ...)
 
-rap_lgl(...)
+rap_lgl(.tbl, ...)
 
-rap_int(...)
+rap_int(.tbl, ...)
 
-rap_chr(...)
+rap_chr(.tbl, ...)
 
-rap_raw(...)
+rap_raw(.tbl, ...)
 
-rap_dfr(...)
+rap_dfr(.tbl, ...)
 }
 \arguments{
 \item{.tbl}{A data frame}
