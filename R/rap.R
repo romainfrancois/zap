@@ -227,3 +227,33 @@ rap <- function(.tbl, ...) {
   })
   .tbl
 }
+
+#' Automatically select the output type
+#'
+#' When `auto()` is used as the type on the left hand side of a [rap()] formula,
+#' the common type will be automatically deduced using the infrastructure
+#' provided by `vctrs`.
+#'
+#' @examples
+#' library(dplyr)
+#'
+#' # The output for each row is an integer of length 1
+#' # so the type is automatically deduced as integer
+#' starwars %>%
+#'   rap(count = auto() ~ length(films))
+#'
+#' # auto() is mostly useful for automatically
+#' # determining an atomic common type (integer, double, etc).
+#' # When you have more complicated objects, you have to list() them
+#' starwars %>%
+#'   rap(model = auto() ~ list(lm(height ~ mass, starwars)))
+#'
+#' # In this case, it's more useful to use the default rap() behavior
+#' # which already assumes the result should be a list
+#' starwars %>%
+#'   rap(model = ~lm(height ~ mass, starwars))
+#'
+#' @export
+auto <- function() {
+  NULL
+}

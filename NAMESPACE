@@ -2,6 +2,7 @@
 
 S3method(print,rap_lamdda)
 export("%>%")
+export(auto)
 export(lap)
 export(nap)
 export(rap)
