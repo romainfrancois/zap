@@ -7,9 +7,9 @@
 auto()
 }
 \description{
-When `auto()` is used as the type on the left hand side of a [rap()] formula,
+When \code{auto()} is used as the type on the left hand side of a \code{\link[=rap]{rap()}} formula,
 the common type will be automatically deduced using the infrastructure
-provided by `vctrs`.
+provided by \code{vctrs}.
 }
 \examples{
 library(dplyr)
